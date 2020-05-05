@@ -13,7 +13,7 @@ var source =  [
 
         {
           question: "You visit probation for posting on which channel ?",
-          choices: ["Random", "Game", "Class", "Help"],
+          choices: ["#Random", "#Game", "#Class", "#Help"],
           answer: 2
         },
 
