@@ -1,17 +1,24 @@
 	*{
 		font-family: Arial, helvatica, sans-serif;
+		box-sizing: border-box;
 		}
 	body{
 		background-color: #49003d;
 	}
+  h1{
+    color:White;
+    text-align: center;
+    font-size:3em;
+    margin: 10px 0;
+  }
 	.form{
 		overflow: hidden;
 		margin: auto;
-		width: 35%;
-		padding: 30px;
+		width: 75%;
+		padding: 25px;
 		border-style: solid ;
 		border-color: white;
-		border-radius:30px 0px 30px 0px;
+		border-radius:30px 0px;
 		background-color: #b69eb6;
 		}
 	p{
@@ -24,26 +31,22 @@
 		color: Black;
 	}
 	hr{
-		margin-bottom: 35px;
+		margin-bottom: 30px;
 		border: 2px solid black;
-  		border-radius: 5px;
-	}
-	h1{
-		color:White;
-		text-align: center;
-		font-size:3em;
+  	border-radius: 5px;
 	}
 	#question{
 		display: flex;
+    flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 	}
   .btnNormal {
-  width: 60%;
+  width: 70%;
   background-color: #49003d;
   color: white;
   padding: 15px 20px;
-  margin: 10px;
+  margin: 15px;
   border: none;
   border-radius:9px; ;
   cursor: pointer;
@@ -54,7 +57,7 @@
   background-color: green;
   color: white;
   padding: 15px 20px;
-  margin: 10px;
+  margin: 15px;
   border: none;
   border-radius:9px; ;
   cursor: pointer;
@@ -65,23 +68,23 @@
   background-color: red;
   color: white;
   padding: 15px 20px;
-  margin: 10px;
+  margin: 15px;
   border: none;
   border-radius:9px; ;
   cursor: pointer;
   font-weight: 600;
 	}
 #next {
-  width: 35%;
+  width: 40%;
   background-color: #0000b3;
   color: white;
-  padding: 15px 20px;
+  padding: 10px;
   font-size: 15px;
   text-align: center;
   display: block;
-  margin: 20px auto;
+  margin: auto;
   border: none;
-  border-radius:9px 9px 9px 0px; ;
+  border-radius:9px; ;
   cursor: pointer;
   font-weight: 600;
 	}
@@ -90,4 +93,32 @@
   }
   #required{
   	color: red;
+  }
+
+  @media (min-width: 576px) {
+    .form{
+    overflow: hidden;
+    margin: auto;
+    width: 55%;
+    padding: 25px;
+    border-style: solid ;
+    border-color: white;
+    border-radius:30px 0px;
+    background-color: #b69eb6;
+    }
+    
+  }
+
+  @media (min-width: 992px) {
+    .form{
+    overflow: hidden;
+    margin: auto;
+    width: 45%;
+    padding: 25px;
+    border-style: solid ;
+    border-color: white;
+    border-radius:30px 0px;
+    background-color: #b69eb6;
+    }
+    
   }
