@@ -72,11 +72,13 @@ btnCheck.addEventListener("click", function(e) {
   if(e.target && e.target.id == source[i].answer) {
     e.target.className = "btnCorrect";
     ans++;
-    ansCheck.innerHTML = "You have " + (ans/5) + " correct answer(s)!";
+    ansCheck.innerHTML = "Your score is " + (ans/5) + "/5!";
+    finalScore();
   }else{
     e.target.className = "btnWrong";
     document.getElementById(source[i].answer).className = "btnCorrect";
-    ansCheck.innerHTML = "You have " + (ans/5) + " correct answer(s)!";
+    ansCheck.innerHTML = "Your score is " + (ans/5) + "/5!";
+    finalScore();
   };
   document.getElementById("required").innerHTML = "";
 },{once: true} );
@@ -101,3 +103,10 @@ change.addEventListener("click", function(){
 
 }
   );
+
+// function to show final score
+function finalScore(){
+  if (num == 5){
+    ansCheck.innerHTML = "Your final score is " + (ans/5) + "!";
+  }
+}
